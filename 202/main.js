@@ -64,9 +64,9 @@ function init() {
     //Aplicar las transformaciones a la segunda piramide
     piramide[1].applyMatrix(traslate([2*lado,2*lado,0]));
     piramide[1]=escalado(piramide[1],[1.5,1.5,1.5],[2*lado,2*lado,0]);
-    piramide[1]=rotacionReal(piramide[1],45,'x',[0,0,0]);
-    piramide[1]=rotacionReal(piramide[1],45,'y',[0,0,0]);
-    piramide[1]=rotacionReal(piramide[1],60,'z',[0,0,0]);
+    piramide[1]=rotacionReal(piramide[1],45,'x',[2*lado,2*lado,0]);
+    piramide[1]=rotacionReal(piramide[1],45,'y',[2*lado,2*lado,0]);
+    piramide[1]=rotacionReal(piramide[1],60,'z',[2*lado,2*lado,0]);
 
     // En el documento HTML
     document.body.appendChild(renderer.domElement);
